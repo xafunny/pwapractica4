@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+<defs>
+<pattern id="teclas" patternUnits="userSpaceOnUse" x="80" y="140" width="40" height="40">
+<rect width="34" height="30" rx="6" fill="#3a3a3a"/>
+</pattern>
+</defs>
+<rect width="600" height="400" fill="#f2f2f2"/>
+<rect x="55" y="115" width="490" height="190" rx="18" fill="#111111"/>
+<rect x="80" y="140" width="440" height="120" fill="url(#teclas)"/>
+<rect x="80" y="140" width="34" height="30" rx="6" fill="#d90429"/>
+<rect x="440" y="180" width="34" height="30" rx="6" fill="#d90429"/>
+<rect x="480" y="220" width="34" height="30" rx="6" fill="#d90429"/>
+<rect x="80" y="262" width="60" height="26" rx="6" fill="#3a3a3a"/>
+<rect x="150" y="262" width="300" height="26" rx="6" fill="#3a3a3a"/>
+<rect x="460" y="262" width="60" height="26" rx="6" fill="#3a3a3a"/>
+</svg>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Productos | Tienda Tech</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="cabecera">
+    <div class="contenedor cabecera__fila">
+        <a href="index.html" class="logo">Tienda<span>Tech</span></a>
+        <nav class="menu">
+            <a href="index.html" class="activo">Productos</a>
+            <a href="pedidos.php" class="solo-servidor" hidden>Mis pedidos</a>
+            <a href="login.php" class="solo-servidor" hidden>Iniciar sesión</a>
+            <a href="registro.php" class="solo-servidor" hidden>Registrarse</a>
+            <a href="carrito.php" id="enlace-carrito" class="btn-carrito">
+                Carrito <span id="contador-carrito" class="contador">0</span>
+            </a>
+        </nav>
+    </div>
+</header>
+
+<main class="contenedor principal">
+    <div id="aviso-modo" class="aviso-modo" role="status">Cargando productos</div>
+
+    <section class="hero">
+        <h1>Tecnología al mejor precio</h1>
+        <p>Compra directamente a vendedores verificados. Envíos a todo el país.</p>
+    </section>
+
+    <div class="buscador">
+        <input type="search" id="buscar" placeholder="Buscar producto o vendedor" aria-label="Buscar productos">
+        <span id="resultados-texto" class="buscador__texto"></span>
+    </div>
+
+    <section class="grilla" id="grilla-productos"></section>
+    <p id="sin-resultados" class="vacio" hidden>No encontramos productos con esa búsqueda.</p>
+</main>
+
+<footer class="pie">
+    <div class="contenedor">
+        <p>&copy; 2026 Tienda Tech | Clase Práctica 4 | Programación Web Avanzada | UBE</p>
+    </div>
+</footer>
+
+<div id="panel-fondo" class="panel-fondo" hidden></div>
+<aside id="panel-carrito" class="panel-carrito" aria-label="Carrito de compras" hidden>
+    <div class="panel-carrito__cab">
+        <h2>Tu carrito</h2>
+        <button type="button" id="cerrar-panel" class="btn-quitar" aria-label="Cerrar">&times;</button>
+    </div>
+    <div id="panel-lineas" class="panel-carrito__lineas"></div>
+    <div class="panel-carrito__pie">
+        <p>Total: <strong id="panel-total">$0.00</strong></p>
+        <button type="button" id="panel-comprar" class="btn btn--primario btn--bloque">Finalizar compra (simulada)</button>
+    </div>
+</aside>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="js/tienda-html.js"></script>
+</body>
+</html>
